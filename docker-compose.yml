@@ -1,0 +1,52 @@
+version: "3.3"
+networks:
+  botnet: 
+    ipam:
+      config:
+        - subnet: 172.16.0.0/19
+    driver_opts:
+      com.docker.network.bridge.name: botnet
+services:     
+    admin:
+      build: server
+      networks:
+        botnet:
+           ipv4_address: 172.16.0.10
+      ports: 
+        - "65223:65223"
+        - "65222:65222"
+
+    daemon1:
+      build: client
+      networks:
+      -  botnet
+      environment:
+        name: daemon1
+
+
+    daemon2:
+      build: client
+      networks:
+      -  botnet
+      environment:
+        name: daemon2
+
+    daemon3:
+      build: client
+      networks:
+      -  botnet
+      environment:
+        name: daemon3
+
+    daemon4:
+      build: client
+      networks:
+      -  botnet  
+      environment:
+        name: daemon4
+    
+    web:
+      build: web
+      networks:
+       botnet:
+           ipv4_address: 172.16.0.100

