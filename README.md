@@ -6,7 +6,7 @@ thực hiện command: `docker-compose up` để dùng docker giả lập mạng
 # cấu hình hạ tầng
 ## cấu hình router
 ![](https://github.com/magnetohvcs/payload/blob/master/image/router.png)
-## cấu hình từ xa
+## cấu hình các máy từ xa
 ``` 
 ansible-playbook playbook.yml -i host.ini -k -K -u eve 
 ```
