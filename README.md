@@ -11,3 +11,8 @@ thực hiện command: `docker-compose up` để dùng docker giả lập mạng
 ansible-playbook playbook.yml -i host.ini -k -K -u eve 
 ```
 ![](https://github.com/magnetohvcs/payload/blob/master/image/ansible121212.png)
+## trên máy admin
+`python3 /tmp/admin.py`
+## trên các máy daemon
+`python3 /tmp/daemon.py`
+## netcat đến cổng 65223 để điều khiển botnet
