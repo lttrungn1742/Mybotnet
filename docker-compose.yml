@@ -8,7 +8,7 @@ networks:
       com.docker.network.bridge.name: botnet
 services:     
     admin:
-      build: server
+      build: admin
       networks:
         botnet:
            ipv4_address: 172.16.0.10
@@ -17,7 +17,7 @@ services:
         - "65222:65222"
 
     daemon1:
-      build: client
+      build: daemon
       networks:
       -  botnet
       environment:
@@ -25,21 +25,21 @@ services:
 
 
     daemon2:
-      build: client
+      build: daemon
       networks:
       -  botnet
       environment:
         name: daemon2
 
     daemon3:
-      build: client
+      build: daemon
       networks:
       -  botnet
       environment:
         name: daemon3
 
     daemon4:
-      build: client
+      build: daemon
       networks:
       -  botnet  
       environment:

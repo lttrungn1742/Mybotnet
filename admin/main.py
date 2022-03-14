@@ -83,10 +83,8 @@ class Admin(Thread):
     
         while True:
             c, _ = s.accept()
-            
             while True:
                 self.listOptions(c)
-         
                 cmd = self.getLine(c)     
                 if cmd == '1':
                     self.option1(c)
