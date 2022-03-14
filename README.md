@@ -1,4 +1,4 @@
-__Lab 8 môn An Toàn Mạng Nâng Cao__
+__Lab 8 môn An Toàn Mạng Nâng Cao của Lê Thành Trung - N18DCAT097__
 </br>
 thực hiện command: `docker-compose up` để dùng docker giả lập mạng bot hoặc dùng eve-ng thì cấu hình như sau
 # mô hình giả lập mạng botnet
