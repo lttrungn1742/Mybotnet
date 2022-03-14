@@ -1,0 +1,31 @@
+---
+# - hosts: botnet
+#   become: true
+#   tasks: 
+#   - name: install pip3
+#     apt:  
+#       name: "{{ item }}"
+#     with_items:
+#       - python3-pip
+
+# - hosts: daemon
+#   tasks:      
+#   - name: install lib
+#     pip: 
+#      name:
+#         - requests
+#         - icmplib
+#      executable: pip3
+# - hosts: admin
+#   tasks:
+#   - name: get script
+#     get_url:
+#       url: http://172.16.1.1:8888/admin/main.py
+#       dest: /tmp/admin.py
+
+- hosts: daemon
+  tasks:
+  - name: get script
+    get_url:
+      url: http://172.16.1.1:8888/daemon/main.py
+      dest: /tmp/daemon.py
