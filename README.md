@@ -6,7 +6,6 @@ __Lab 8 môn An Toàn Mạng Nâng Cao__
 ## cấu hình router
 ![](https://github.com/magnetohvcs/payload/blob/master/image/router.png)
 ## cấu hình từ xa
-</br>
 ``` 
 ansible-playbook playbook.yml -i host.ini -k -K -u eve 
 ```
