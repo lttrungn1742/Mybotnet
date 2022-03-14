@@ -7,6 +7,4 @@ __Lab 8 môn An Toàn Mạng Nâng Cao__
 ![](https://github.com/magnetohvcs/payload/blob/master/image/router.png)
 ## cấu hình từ xa
 </br>
-```
-ansible-playbook playbook.yml -i host.ini -k -K -u eve
-```
+`ansible-playbook playbook.yml -i host.ini -k -K -u eve`
