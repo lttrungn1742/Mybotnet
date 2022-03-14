@@ -1,5 +1,5 @@
 __Lab 8 môn An Toàn Mạng Nâng Cao__
-</br>
+thực hiện command: `docker-compose up` để dùng docker giả lập mạng bot hoặc
 # mô hình giả lập mạng botnet
 ![](https://github.com/magnetohvcs/payload/blob/master/image/eve-ng.png)
 # cấu hình hạ tầng
@@ -9,3 +9,4 @@ __Lab 8 môn An Toàn Mạng Nâng Cao__
 ``` 
 ansible-playbook playbook.yml -i host.ini -k -K -u eve 
 ```
+![](https://github.com/magnetohvcs/payload/blob/master/image/ansible121212.png)
